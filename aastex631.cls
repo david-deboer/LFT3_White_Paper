@@ -165,7 +165,7 @@ track changes, new `modern' style and much more, by Amy Hendrickson,%
 
 %% Preprints are like manuscript but are single spaced:
 \newif\ifpreprint
- \DeclareOption{preprint}{\@two@colfalse\preprinttrue\tenpointtrue}%
+ \DeclareOption{preprint}{\@two@colfalse\preprinttrue\twelvepointtrue}%
 
 \newif\ifpreprinttwo
  \DeclareOption{preprint2}{\@two@coltrue\preprinttwotrue\twelvepointtrue}% 
