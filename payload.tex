@@ -11,6 +11,7 @@ The previous section outlined the science case for a telescope on the lunar fars
     \textbf{Comms} & 100 GB/month & The nominal budget includes 20 weeks of operation \\ \hline
     \textbf{Storage} & 20 TB & This coupled with comms and processing scopes the system. \\ \hline
     \end{tabular}
+    \label{tab:constraints}
 \end{table}
 
 The science payload includes a mid-band phased array operating from 250--750 MHz, a wide band and high band antenna (750-2250 MHz), an ``FM'' band antenna (60--110 MHz), and a low band antenna (1--50 MHz). A schematic of the payload is shown in Figure \ref{fig:block}.
@@ -31,8 +32,17 @@ The mid-band array covers the bulk of the lander top surface with 48 dual polari
 \end{figure}
 
 
-The operational constraints have a huge impact on the observing strategy, data products and download.  The full daytime available power is 100W, which reduces to 40W at night, and the expected download capacity is 100 GB/month.  The expected on-board memory will be between 10-20 TB.  The beamformer and individual antennas will produce dual-linear polarizations.  The spectrometer will have two general modes:
+The operational constraints have a huge impact on the observing strategy, data products and download.  The full daytime available power is 100W, which reduces to 40W at night, and the expected download capacity is 100 GB/month.  The expected on-board memory will be between 10-20 TB.  The beamformer and individual antennas will produce dual-linear polarizations.  The spectrometer will have two main modes:
 \begin{itemize}[noitemsep]
-    \item ring-buffer triggered baseband
-    \item pseudo-Stokes dynamic spectra of varying spectral/temporal resolution.
+    \item Ring-buffer triggered baseband
+    \item Pseudo-Stokes dynamic spectra of varying spectral/temporal resolution.
 \end{itemize}
+
+\subsection{Vehicle Lifespan and Programatics}
+    As mentioned previously, the mission is targeted of launch in 2028. High level functional requirement for operations window is twenty weeks. With any aditional time and data intake is past considered mission requirements. Programatics sequence for the mission will follow a timeline as modeled. 
+%\begin{itemize}
+%    \item 
+%\end{itemize}
+
+\subsection{Calibration Logistics}
+Calibration will take place through federated data approach. The landing system will process a landing location prior to comm system boot. Once the comm system is operational it will confirm and update the location and orientation. Imagery will also be secondary means of lander location confirmation. Contingency location confirmation may be used through NASA Laser reflectors. Measurments of exact beam outputs from orbiter and lander may also be used for calibration. 

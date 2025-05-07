@@ -82,16 +82,20 @@
 \usepackage{times}
 \usepackage{enumitem}
 \usepackage{subcaption}
+\usepackage{tablefootnote}
+\usepackage{multirow}
+\usepackage{placeins}
 
 \begin{document}
 
 \title{Lunar Farside Technosignature \& Transients Telescope (LFT3)}
 
 \author[0000-0003-3197-2294]{David R. DeBoer}
+\affiliation{Sub-department of Astrophysics, University of Oxford, Oxford, UK}
 \affiliation{Radio Astronomy Laboratory, University of California, Berkeley, CA, 94720 USA}
 \author[0000-0002-0387-6476]{Karl F. Warnick}
 \affiliation{ECE Dept., Brigham Young University, Provo, UT, USA}
-\author[0000-0002-4409-3515]{C.D. Tremblay}
+\author[0000-0002-4409-3515]{Chenoa D. Tremblay}
 \affiliation{SETI Institute, 339 Bernardo Ave, Suite 200, Mountain View, CA 94043, USA}
 \affiliation{Berkeley SETI Research Center, University of California, Berkeley, CA 94720, USA}
 \author[0000-0002-5927-0481]{Owen A. Johnson}
@@ -101,9 +105,24 @@
 \affiliation{Haverford College, Dept. of Physics and Astronomy, Haverford, PA 19041 USA}
 \author[0000-0002-4553-655X]{Evan F. Keane}
 \affiliation{School of Physics, Trinity College Dublin, College Green, Dublin 2, Ireland}
+\author[0000-0001-7836-1787]{Jake D. Turner}
+\affil{Department of Astronomy and Carl Sagan Institute, Cornell University, Ithaca, New York 14853, USA}
+
 
 \begin{abstract}
-As a species, we are on the verge of being able to observe the cosmos from the moon with sufficient accuracy in order to gain a deeper understanding of astrophysical processes.  This necessitates a transition from earth-based observatories to space-based telescopes.  We are also at a tipping point in having cost-effective access to space which is fueling this issue however, it also makes possible a revolution in scientific access that is driving nations to send experiments to the lunar surface and orbit. Until the moon also becomes crowded with sources of radio emission, the lunar farside offers a unique environment to measure radiation from the Universe with essentially zero radio frequency interference. We propose an ultra high frequency (UHF) phased array telescope to be landed near the lunar antipode within 5 years to conduct initial baseline observations in the absence of RFI. The Lunar Farside Technosignatures \& Transients Telescope (LFT3) will search the farside sky for radio emissions from known and unknown sources and create a historical record of lunar radio observations from the current pristine silence to a more crowded environment as further instruments are deployed. LFT3 is a once-in-human-history opportunity to record signals in a fully quiet environment. 
+
+We uniquely rely on radio telescopes to understand the bulk of baryonic matter in the Universe as well as the evolution of the Universe across cosmic time. There are two fundamental limitations to our exploration of the cosmos with terrestrial-based radio telescopes: the prevalence of interfering radio transmitters in our daily lives and the ionosphere and atmosphere that enable our existence.  Both of the effects are ameliorated by getting above the atmosphere and beyond the Earth, which to-date has generally been the exclusive purview of expensive ``Great Observatories'' funded by governments.
+
+However, we are now at a tipping point in having cost-effective access to space, including the lunar surface,  which will enable disparate groups to send instruments there, bringing about a transition from Earth-based observatories to space-based and cislunar telescopes. This provides opportunities for new science but will also bring radio frequency interference sources to the quietest remaining location we have, the lunar farside. Until the moon's farside becomes crowded with sources of radio emission it offers a unique opportunity to measure radiation from the Universe with virtually no interference from radio waves as well as below the ionospheric cut-off.  The opportunity to get to the lunar farside before there is significant RFI and make these measurements is an opportunity that is unique in human history, but with a very limited timeframe.
+
+We present here a proposed telescope covering 1 MHz - 2.7 GHz that will be landed near the lunar antipode within five years in order to conduct baseline observations free from radio frequency interference. We will also discuss related activities for related ground-based and earth-orbiting instruments that will allow for prototyping and support of a lunar mission. The Lunar Farside Technosignatures and Transients Telescope (LFT3) will search the farside sky for radio emissions from known and unknown sources and create a historical record of lunar radio observations from the current pristine silence to a more crowded RF environment as further instruments are deployed -- taking advantage of this unique opportunity in human history.
+
+
+%As a powerful tool for studying astrophysical processes, radio telescopes hold a prominent place in the astronomy community. There are two limitations to our exploration of the cosmos with terrestrial telescopes: the prevalence of radio transmitters in our daily lives and the ionosphere around the Earth, which creates a dispersion screen that is opaque over important frequency bands. We are, however, on the verge of overcoming these limitations by observing the cosmos from the moon. We are at a tipping point in having cost-effective access to space which will enable many nations to send experiments to the lunar surface and orbit and bring about a transition from Earth-based observatories to space-based telescopes. This provides opportunities for new science but will also bring radio frequency interference sources to the quietest remaining near-Earth location, the lunar farside. Until the moon's farside becomes crowded with sources of radio emission, the lunar farside offers a unique opportunity to measure radiation from the Universe with virtually no interference from radio waves. In this paper, we present an ultra high frequency (UHF) phased array telescope that will be landed near the lunar antipode within five years in order to conduct baseline observations free from radio frequency interference. The Lunar Farside Technosignatures and Transients Telescope (LFT3) will search the farside sky for radio emissions from known and unknown sources and create a historical record of lunar radio observations from the current pristine silence to a more crowded atmosphere as further instruments are deployed. The LFT3 is an opportunity never before offered in human history for the recording of signals in a completely silent environment. 
+
+
+
+%Humanity is on the verge of being able to observe the cosmos from the moon with sufficient accuracy in order to gain a deeper understanding of astrophysical processes.  This necessitates a transition from earth-based observatories to space-based telescopes.  We are at a tipping point in having cost-effective access to space which will enable many nations to send experiments to the lunar surface and orbit. This provides opportunities for new science but will also bring RFI sources to the quietest remaining near-earth location. Until the moon also becomes crowded with sources of radio emission, the lunar farside offers a unique environment to measure radiation from the Universe with essentially zero radio frequency interference. We describe an ultra high frequency (UHF) phased array telescope to be landed near the lunar antipode within five years to conduct initial baseline observations in the absence of RFI. The Lunar Farside Technosignatures \& Transients Telescope (LFT3) will search the farside sky for radio emissions from known and unknown sources and create a historical record of lunar radio observations from the current pristine silence to a more crowded environment as further instruments are deployed. LFT3 is a once-in-human-history opportunity to record signals in a fully quiet environment. 
 
 \end{abstract}
 
@@ -111,9 +130,13 @@ As a species, we are on the verge of being able to observe the cosmos from the m
 \label{sec:intro}
 \subfile{introduction}
 
+\section{Lunar Farside}
+\label{sec:Lunar Farside Location Conditions}
+\subfile{farside}
+
 \section{Science Case}
 \label{sec:science}
-\subfile{science}
+\subfile{science_new}
 
 %\section{Observing Within The Terrestrial RF Environment}
 %\label{sec:rfenv}
@@ -123,9 +146,16 @@ As a species, we are on the verge of being able to observe the cosmos from the m
 \label{sec:payload}
 \subfile{payload}
 
+\section{Other Considerations}
+\label{sec:otherconsiderations}
+\subfile{other_considerations}
+
 %\appendix
 %\section{Appendix information}
 
+\section{Conclusion}
+
+In view of the compelling opportunity for science observations offered by LFT3, and the value of creating a historical record of the electromagnetic environment on the lunar far side, we recommend that LFT3 be funded, developed, and launched by end 2029. 
 
 \bibliography{bibs,bibfiles/radio-stars,bibfiles/transients,bibfiles/solarsystem-emission}{}
 \bibliographystyle{aasjournal}
