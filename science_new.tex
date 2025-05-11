@@ -130,9 +130,7 @@ Currently, the Commensal Real-time ASKAP Fast Transients Collaboration (CRAFT; 7
 
 Low-frequency observations of FRBs are crucial for understanding their propagation through the intergalactic medium, potentially unveiling the distribution of baryonic matter and offering clues about the emission mechanism and source plasma environments. LOFAR observations of FRB 20180916 have revealed potential evidence for interaction between a neutron star and its binary companion by observing bursts down to 100 MHz~\citep{pleunis2021lofar}.
 
-\textbf{Scientific Specifications:} Given the values shown in Figure \ref{fig:freqbands}, we calculated the expected sensitivity to FRB emission. If we assume 20\,seconds of integrated time for a de-dispersed signal at a bandwidth (BW) of 100\,MHz, then we would have a 5\,$\sigma$ flux density limit of 10--11\,Jy over an incoherent sum. The CHIME telescope evaluated 25 repeating FRBs and found them to have 63\,ms of peak widths with bandwidths of 50-200\,MHz \citep{CHIME_RepeatingFRB}. Therefore, we would need a time resolution of $<$1\,ms. However, they found the dispersion measures (DMs) to range from 220 to 17,000\,pc\,cm$^{-3}$ meaning we would need to compute capacity to run through this range to identify blind candidates. 
-
-Most sources had the strongest emission at 400--600\,MHz, suggesting we would only need to do this experiment with one set of dipoles. The CHIME experiments have a sensitivity limit of 0.339\,Jy, suggesting that with a limit of 11\,Jy it would be challenging to find new sources of emission from extragalactic-FRBs. An increase in bandwidth or time would add a $\sqrt{BW\times\tau}$ increase in sensitivity, where $\tau$ is the total integration time in seconds and BW is in Hz. In either scenario, a de-dispersed dynamic spectrum would be the most compressed output for sending to Earth for further analysis.
+\textbf{Scientific Specifications:} Detection of FRBs at low frequencies requires high time resolution ($\leq$1\,ms) and sufficient spectral resolution ($\sim$0.1--0.5\,MHz) to resolve dispersion sweeps and intrinsic burst structures. While most FRBs peak between 400--800\,MHz, several have been observed down to $\sim$100\,MHz, with flux densities ranging from $\sim$0.1 to hundreds of Jy~\citep{pleunis2021lofar}. Dual-polarization capability and dynamic spectra in Stokes I and V will support burst characterization and magnetic field diagnostics. Observations in the sub-100\,MHz range, inaccessible from Earth, may uncover a suppressed or scattered FRB population and place limits on free-free absorption and propagation effects. LFT3's large field of view and ability to co-observe with ground-based arrays would also enhance the chance of real-time detection and sub-arcsecond localization.
 
 % \textbf{CL: It is possible to estimate the FRB rate from CHIME, which detects about 1000 bursts per full year of observation in the same frequency range over a 200 deg$^2$ FoV with a coherent SEFD of 50 Jy. Assuming a Euclidean population of sources, in the coherent FoV of LFT3 of $\sim 4000$ deg$^2$ at the bottom of the mid-band, $\sim 0.88-2.5$ bursts could be detected per year of observation.}
 
@@ -140,11 +138,54 @@ Most sources had the strongest emission at 400--600\,MHz, suggesting we would on
 
 \subsubsection{Long Period Transients}
 
-Galactic long-period radio transients represent a burgeoning new sub-class of transients. Distinguished by their exceptionally long periods, minuter long pulse duration and their low frequency emission. The prototypical example is \cite{hurley_walker_radio_2022}. This object exhibits a period of 18.18 minutes and a pulse duration of $\sim 1$ minute at 100--200~MHz. The measured DM for this source was $\sim57~\text{pc cm}^{-3}$ indicating a Galactic origin. The distribution of pulses seen from this source are orders of magnitude larger (30--60~s) than that of FRBs and have fluxes of 5--40~Jy. This makes them one of the most feasible science goals of LFT3 (see. Fig. \ref{fig:transient_space}). The emission is also highly linearly polarized (90\%) with a spectral index of $\sim 1.2$, suggesting a strongly magnetized engine (reference). It is intially thought that magnetars may be a plausible source for these transients. However, the absence of multi-wavelength emission from these sources contradict many models (references), leaving the discussion for the origin of these transients still on the table. Subsequent surveys have revealed more of these objects with periods ranging from minutes to hours(reference). Notably they show low dispersion measures ($\lesssim$ few $10^2~\text{pc cm}^{-3}$) which make them relatively easy to distinguish from when observing at low frequencies. They sources are not exceedingly rare and harbor many open questions yet to be fully explored. \\ 
+Galactic long-period radio transients represent a burgeoning new sub-class of transients. Distinguished by their exceptionally long periods, minuter long pulse duration and their low frequency emission. The prototypical example is GLEAM-X J162759.5-523504.3 \citep{hurley_walker_radio_2022}. This object exhibits a period of 18.18 minutes and a pulse duration of $\sim 1$ minute at 100--200~MHz. The measured DM for this source was $\sim57~\text{pc cm}^{-3}$ indicating a Galactic origin. The distribution of pulses seen from this source are orders of magnitude larger (30--60~s) than that of FRBs and have fluxes of 5--40~Jy. This makes them one of the most feasible science goals of LFT3 (see. Fig. \ref{fig:transient_space}). The emission is also highly linearly polarized (90\%) with a spectral index of $\sim 1.2$, suggesting a strongly magnetized engine (reference). It is intially thought that magnetars may be a plausible source for these transients. However, the absence of multi-wavelength emission from these sources contradict many models (references), leaving the discussion for the origin of these transients still on the table. Subsequent surveys have revealed more of these objects with periods ranging from minutes to hours(reference). Notably they show low dispersion measures ($\lesssim$ few $10^2~\text{pc cm}^{-3}$) which make them relatively easy to distinguish from when observing at low frequencies. They sources are not exceedingly rare and harbor many open questions yet to be fully explored. \\ 
 LFT3 presents a unique opportunity to advance this field while it's still in its infancy. As previously discussed having broadband observations of these sources in an RFI pristine environment will give further insight to these objects. Such observations could reveal whether these ultra-long-period objects exhibit even longer-wavelength emission, test how their spectra evolve, and potentially catch new transients with ultra-low dispersion measures in the local Galaxy.
 
-\textbf{Scientific Specifications:}
+\textbf{Scientific Specifications:} Long-period transients, with pulse durations of 30--60\,s and peak flux densities ranging from 5--40\,Jy at 100--200\,MHz~\citep{hurley_walker_radio_2022}, are well within the detection capabilities of LFT3. Observations should include dual-polarization data to capture the high linear polarization fraction ($\sim$90\%), with spectral resolution of 0.1--0.5\,MHz and time resolution on the order of 1--5\,s to resolve burst profiles while preserving sensitivity to slow periodicity. The observed low dispersion measures ($\lesssim$200\,pc\,cm$^{-3}$) reduce computational demands for de-dispersion, enabling efficient real-time searches. 
 
+\begin{deluxetable*}{ccccccc}
+    \tablecaption{Minimum Detectable Flux Densities ($S_{\text{min}}$) Grouped by pulse width.\label{tab:smin}}
+    \tablehead{
+    \colhead{Pulse Width} &
+    \colhead{Frequency} &
+    \colhead{Wavelength} &
+    \colhead{$A_{\text{eff}}$} &
+    \colhead{Gain} &
+    \colhead{SEFD} &
+    \colhead{$S_{\text{min}}$} \\
+    \colhead{(ms)} &
+    \colhead{(MHz)} &
+    \colhead{(m)} &
+    \colhead{(m$^2$)} &
+    \colhead{($10^{-4}$\,K/Jy)} &
+    \colhead{(kJy)} &
+    \colhead{(Jy)}
+    }
+    \startdata
+    0.1  & 250 & 1.20 & 17.05 & 61.75  & 16.19  & 572.5 \\
+         & 500 & 0.60 & 4.26  & 15.44  & 64.78  & 2290.2 \\
+         & 750 & 0.40 & 1.89  & 6.86   & 145.75 & 5152.9 \\
+    \hline
+    1    & 250 & 1.20 & 17.05 & 61.75  & 16.19  & 181.1 \\
+         & 500 & 0.60 & 4.26  & 15.44  & 64.78  & 724.2 \\
+         & 750 & 0.40 & 1.89  & 6.86   & 145.75 & 1629.5 \\
+    \hline
+    10   & 250 & 1.20 & 17.05 & 61.75  & 16.19  & 57.26 \\
+         & 500 & 0.60 & 4.26  & 15.44  & 64.78  & 229.0 \\
+         & 750 & 0.40 & 1.89  & 6.86   & 145.75 & 515.3 \\
+    \hline
+    100  & 250 & 1.20 & 17.05 & 61.75  & 16.19  & 18.11 \\
+         & 500 & 0.60 & 4.26  & 15.44  & 64.78  & 72.42 \\
+         & 750 & 0.40 & 1.89  & 6.86   & 145.75 & 162.9 \\
+    \enddata
+    \tablecomments{
+    Minimum detectable flux densities are calculated assuming a system temperature of 100\,K, a bandwidth of 100\,MHz, and a signal-to-noise ratio of 5$\sigma$. Gain values are expressed in units of $10^{-4}$\,K/Jy, and SEFD values are given in kilojanskys (kJy).
+    }
+\end{deluxetable*}
+    
+    
+    
+    
 
 \subsection{Spectral Lines}
 Radio frequency interference has significant impact when studying Galactic and extragalactic chemistry, especially in the frequency range around 1\,GHz (e.g. \citealt{Liang_2023}). This is due to an increasingly cluttered frequency band of intense signals from anthropengenic RFI, often leaking into protected radio astronomy bands. This impacts our ability to study the chemistry, kinematics, and age of astronomical objects through the spectral properties of atoms and molecules. Therefore, we must look to more creative ways of studying the Galaxy to study the dynamical motions and slow changes that are happening over the life-spans of stars and galaxies, a crtical aspect for understanding their evolution.
