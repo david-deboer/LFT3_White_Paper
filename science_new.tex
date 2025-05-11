@@ -130,7 +130,7 @@ Currently, the Commensal Real-time ASKAP Fast Transients Collaboration (CRAFT; 7
 
 Low-frequency observations of FRBs are crucial for understanding their propagation through the intergalactic medium, potentially unveiling the distribution of baryonic matter and offering clues about the emission mechanism and source plasma environments. LOFAR observations of FRB 20180916 have revealed potential evidence for interaction between a neutron star and its binary companion by observing bursts down to 100 MHz~\citep{pleunis2021lofar}.
 
-\textbf{Scientific Specifications:} Detection of FRBs at low frequencies requires high time resolution ($\leq$1\,ms) and sufficient spectral resolution ($\sim$0.1--0.5\,MHz) to resolve dispersion sweeps and intrinsic burst structures. While most FRBs peak between 400--800\,MHz, several have been observed down to $\sim$100\,MHz, with flux densities ranging from $\sim$0.1 to hundreds of Jy~\citep{pleunis2021lofar}. Dual-polarization capability and dynamic spectra in Stokes I and V will support burst characterization and magnetic field diagnostics. Observations in the sub-100\,MHz range, inaccessible from Earth, may uncover a suppressed or scattered FRB population and place limits on free-free absorption and propagation effects. LFT3's large field of view and ability to co-observe with ground-based arrays would also enhance the chance of real-time detection and sub-arcsecond localization.
+\textbf{Scientific Specifications:} Detection of FRBs at low frequencies requires high time resolution ($\leq$1\,ms) and sufficient spectral resolution ($\sim$0.1--0.5\,MHz) to resolve dispersion sweeps and intrinsic burst structures. While most FRBs peak between 400--800\,MHz, several have been observed down to $\sim$100\,MHz, with flux densities ranging from $\sim$0.1 to hundreds of Jy~\citep{pleunis2021lofar}. Dual-polarization capability and dynamic spectra in Stokes I and V will support burst characterization. Observations in the sub-100\,MHz range, inaccessible from Earth, may uncover a suppressed or scattered FRB population and place limits on free-free absorption and propagation effects. LFT3's large field of view and ability to co-observe with ground-based arrays would also enhance the chance of real-time detection and sub-arcsecond localization.
 
 % \textbf{CL: It is possible to estimate the FRB rate from CHIME, which detects about 1000 bursts per full year of observation in the same frequency range over a 200 deg$^2$ FoV with a coherent SEFD of 50 Jy. Assuming a Euclidean population of sources, in the coherent FoV of LFT3 of $\sim 4000$ deg$^2$ at the bottom of the mid-band, $\sim 0.88-2.5$ bursts could be detected per year of observation.}
 
@@ -144,7 +144,7 @@ LFT3 presents a unique opportunity to advance this field while it's still in its
 \textbf{Scientific Specifications:} Long-period transients, with pulse durations of 30--60\,s and peak flux densities ranging from 5--40\,Jy at 100--200\,MHz~\citep{hurley_walker_radio_2022}, are well within the detection capabilities of LFT3. Observations should include dual-polarization data to capture the high linear polarization fraction ($\sim$90\%), with spectral resolution of 0.1--0.5\,MHz and time resolution on the order of 1--5\,s to resolve burst profiles while preserving sensitivity to slow periodicity. The observed low dispersion measures ($\lesssim$200\,pc\,cm$^{-3}$) reduce computational demands for de-dispersion, enabling efficient real-time searches. 
 
 \begin{deluxetable*}{ccccccc}
-    \tablecaption{Minimum Detectable Flux Densities ($S_{\text{min}}$) Grouped by pulse width.\label{tab:smin}}
+    \tablecaption{Minimum Detectable Flux Densities ($S_{\text{min}}$) Grouped by pulse width.\label{tab:smin} for 48 element Vivaldi phased array feed.}
     \tablehead{
     \colhead{Pulse Width} &
     \colhead{Frequency} &
@@ -162,24 +162,32 @@ LFT3 presents a unique opportunity to advance this field while it's still in its
     \colhead{(Jy)}
     }
     \startdata
-    0.1  & 250 & 1.20 & 17.05 & 61.75  & 16.19  & 572.5 \\
-         & 500 & 0.60 & 4.26  & 15.44  & 64.78  & 2290.2 \\
-         & 750 & 0.40 & 1.89  & 6.86   & 145.75 & 5152.9 \\
+    \textbf{0.1}   & 250 & 1.2 & 17.1 & 6.2 & 16.2  & 572.5 \\
+                   & 500 & 0.6 & 4.3  & 1.5 & 64.8  & 2290.2 \\
+                   & 750 & 0.4 & 1.9  & 0.7 & 145.7 & 5152.9 \\
     \hline
-    1    & 250 & 1.20 & 17.05 & 61.75  & 16.19  & 181.1 \\
-         & 500 & 0.60 & 4.26  & 15.44  & 64.78  & 724.2 \\
-         & 750 & 0.40 & 1.89  & 6.86   & 145.75 & 1629.5 \\
+    \textbf{1}     & 250 & 1.2 & 17.1 & 6.2 & 16.2  & 181.1 \\
+                   & 500 & 0.6 & 4.3  & 1.5 & 64.8  & 724.2 \\
+                   & 750 & 0.4 & 1.9  & 0.7 & 145.7 & 1629.5 \\
     \hline
-    10   & 250 & 1.20 & 17.05 & 61.75  & 16.19  & 57.26 \\
-         & 500 & 0.60 & 4.26  & 15.44  & 64.78  & 229.0 \\
-         & 750 & 0.40 & 1.89  & 6.86   & 145.75 & 515.3 \\
+    \textbf{10}    & 250 & 1.2 & 17.1 & 6.2 & 16.2  & 57.3 \\
+                   & 500 & 0.6 & 4.3  & 1.5 & 64.8  & 229.0 \\
+                   & 750 & 0.4 & 1.9  & 0.7 & 145.7 & 515.3 \\
     \hline
-    100  & 250 & 1.20 & 17.05 & 61.75  & 16.19  & 18.11 \\
-         & 500 & 0.60 & 4.26  & 15.44  & 64.78  & 72.42 \\
-         & 750 & 0.40 & 1.89  & 6.86   & 145.75 & 162.9 \\
+    \textbf{100}   & 250 & 1.2 & 17.1 & 6.2 & 16.2  & 18.1 \\
+                   & 500 & 0.6 & 4.3  & 1.5 & 64.8  & 72.4 \\
+                   & 750 & 0.4 & 1.9  & 0.7 & 145.7 & 162.9 \\
+    \hline
+    \textbf{1000}  & 250 & 1.2 & 17.1 & 6.2 & 16.2  & 5.7 \\
+                   & 500 & 0.6 & 4.3  & 1.5 & 64.8  & 22.9 \\
+                   & 750 & 0.4 & 1.9  & 0.7 & 145.7 & 51.5 \\
+    \hline
+    \textbf{10000} & 250 & 1.2 & 17.1 & 6.2 & 16.2  & 1.8 \\
+                   & 500 & 0.6 & 4.3  & 1.5 & 64.8  & 7.2 \\
+                   & 750 & 0.4 & 1.9  & 0.7 & 145.7 & 16.3 \\
     \enddata
     \tablecomments{
-    Minimum detectable flux densities are calculated assuming a system temperature of 100\,K, a bandwidth of 100\,MHz, and a signal-to-noise ratio of 5$\sigma$. Gain values are expressed in units of $10^{-4}$\,K/Jy, and SEFD values are given in kilojanskys (kJy).
+    Minimum detectable flux densities are calculated assuming a system temperature of 100\,K, a bandwidth of 100\,MHz, and a signal-to-noise ratio of 5$\sigma$.
     }
 \end{deluxetable*}
     
